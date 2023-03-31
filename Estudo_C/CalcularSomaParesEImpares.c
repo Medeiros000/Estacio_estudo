@@ -16,18 +16,18 @@ int main(){
     printf ("Digite quantos numeros quer digitar\n");
     scanf("%d", &quantidadeDeNumeros);
 
-    // iniciando a captura de valores
+    // Iniciando a captura de valores
     for (cont = 1; cont <= quantidadeDeNumeros; cont++){
 
         // Captura de valores
         printf("Digite o numero %d: ", cont);
         scanf("%d", &numero);
 
-        // condicao para somar dos numeros pares
+        // Condicao para somar dos numeros pares
         if (numero % 2 == 0){
             somaPares = somaPares + numero;
         }
-        // condicao para somar dos numeros impares
+        // Condicao para somar dos numeros impares
         else{
             somaImpares = somaImpares + numero;
         }
