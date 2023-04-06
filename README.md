@@ -1,2 +1,2 @@
-# Estacio_estudo_C
+# Estacio Práticas de Estudo
  Arquivos de práticas na Linguagem C da Estácio
