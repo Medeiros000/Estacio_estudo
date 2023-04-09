@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
-    
+    // Variáveis globais.
     char letra;
+    // Inicialização das variáveis de controle e acumuladoras.
     int conta=0, conte=0, conti=0, conto=0, contu=0;
+    // Requisição de dados.
     printf("Digite uma ou mais vogais minúsculas (a e i o u), digite um ponto no final da linha e tecle ENTER : \n");
     scanf("%c",&letra);
     while (letra!='.')
     {
+        // Switch para contar as vogais.
         switch (letra)
         {
             case 'a':

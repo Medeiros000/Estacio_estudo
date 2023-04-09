@@ -17,5 +17,6 @@ int main(){
                 printf ("\n%d e impar, o resultado e = %d",num,resultado);
             }
         }
+        
     } while (num!=0);
 }    
