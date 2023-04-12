@@ -3,7 +3,7 @@
 int main(){
 
     // Quantidade de alunos
-    int qAlunos = 2;
+    int qAlunos = 50;
     // Vetor Nota dos alunos prova 1, prova 2 e prova 3
     float nota1[qAlunos], nota2[qAlunos], nota3[qAlunos];
     // Media prova1, prova2 e prova3
@@ -47,9 +47,9 @@ int main(){
     mediaGeralTurma = (mediaProva1 + mediaProva2 + mediaProva3) / 3;
 
     // Imprimir os resultados das Medias das provas
-    printf("\nA media da prova 1 foi: %.2f", mediaProva1);
-    printf("\nA media da prova 2 foi: %.2f", mediaProva2);
-    printf("\nA media da prova 3 foi: %.2f", mediaProva3);
+    printf("\nA media das Notas na prova 1 foi: %.2f", mediaProva1);
+    printf("\nA media das Notas na prova 2 foi: %.2f", mediaProva2);
+    printf("\nA media das Notas na prova 3 foi: %.2f", mediaProva3);
 
     // Imprimir a media de cada aluno
     for(int i =0; i < qAlunos; i++)
