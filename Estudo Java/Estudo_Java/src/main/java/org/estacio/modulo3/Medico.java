@@ -44,7 +44,7 @@ public class Medico extends Usuario{
 
     @Override
     public String toString() {
-        return "\nMedico" +
+        return "Medico" +
                 "\nUid: " + uid +
                 "\nCrm: " + crm +
                 "\nEspecialidade: " + especialidade +

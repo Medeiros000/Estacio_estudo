@@ -28,32 +28,11 @@ public class Main {
         medico1.setId(2);
         ((Medico) medico1).setUid(new UID());
 
-        Usuario usuario1 = new Usuario() {
-            @Override
-            public String toString() {
-                return super.toString();
-            }
-        };
-        System.out.println(usuario1);
-
-        if(paciente1 instanceof Paciente){
-            System.out.println("\n"+paciente1.getNome() + " é paciente");
-        }else{
-            System.out.println("\n"+paciente1.getNome() +" não é paciente");
-        }
-        System.out.println(paciente1);
-        if(medico1 instanceof Medico){
-            System.out.println("\n"+medico1.getNome() + " é medico");
-        }else{
-            System.out.println("\n"+medico1.getNome() +" não é medico");
-        }
-        System.out.println(medico1);
-
         cadastro = new Usuario[2];
         cadastro[0] = paciente1;
         cadastro[1] = medico1;
         for (int i = 0; i < cadastro.length; i++) {
-            System.out.println(cadastro[i].getClass());
+            System.out.println(cadastro[i].getNome() + " é " + cadastro[i].getClass().getSimpleName());
             System.out.println(cadastro[i]);
         }
     }

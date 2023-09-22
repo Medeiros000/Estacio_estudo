@@ -31,9 +31,9 @@ public class Paciente extends Usuario {
 
     @Override
     public String toString() {
-        return  "\nPaciente" +
+        return  "Paciente" +
                 "\nUid: " + uid +
                 "\nCpf: " + cpf +
-                 super.toString();
+                super.toString();
     }
 }
