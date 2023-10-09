@@ -14,34 +14,26 @@ public class Medico extends Usuario{
         this.crm = crm;
         this.especialidade = especialidade;
     }
-
     public Medico() {
     }
-
     public UID getUid() {
         return uid;
     }
-
-    public void setUid(UID uid) {
-        this.uid = uid;
+    public void setUid() {
+        this.uid = new UID();
     }
-
     public String getCrm() {
         return crm;
     }
-
     public void setCrm(String crm) {
         this.crm = crm;
     }
-
     public String getEspecialidade() {
         return especialidade;
     }
-
     public void setEspecialidade(String especialidade) {
         this.especialidade = especialidade;
     }
-
     @Override
     public String toString() {
         return "Medico" +

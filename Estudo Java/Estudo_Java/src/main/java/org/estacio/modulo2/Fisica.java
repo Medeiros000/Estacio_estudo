@@ -1,13 +1,23 @@
 package org.estacio.modulo2;
 
 import java.util.Calendar;
+import java.util.Date;
 
 public class Fisica extends Pessoa {
+    private String cpf;
 
-
-    public Fisica(String nome, Calendar data_nasc, String cpf, String rg, String nacionalidade, String naturalidade) {
-        super(nome, data_nasc, cpf, rg, nacionalidade, naturalidade);
+    public Fisica(String nome, String cpf, Calendar data_nasc, String nacionalidade, String naturalidade) {
+        super(nome, data_nasc, nacionalidade, naturalidade);
+        this.cpf = cpf;
     }
+
+    public String getCpf() {
+        return cpf;
+    }
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+}
 
 //    @Override
 //    public String toString() {
@@ -19,4 +29,4 @@ public class Fisica extends Pessoa {
 //                "\nnacionalidade= " + super.getNacionalidade() +
 //                "\nnaturalidade= " + super.getNaturalidade() + "\n}");
 //    }
-}
+

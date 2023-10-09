@@ -12,23 +12,20 @@ public class Paciente extends Usuario {
         this.uid = uid;
         this.cpf = cpf;
     }
-
     public Paciente() {
-    }
-
-    public void setUid(UID uid) {
-        this.uid = uid;
-    }
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
     public UID getUid() {
         return uid;
     }
+    public void setUid() {
+        this.uid = new UID();
+    }
     public String getCpf() {
         return cpf;
     }
-
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
     @Override
     public String toString() {
         return  "Paciente" +
