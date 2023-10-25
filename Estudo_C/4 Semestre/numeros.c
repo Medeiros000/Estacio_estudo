@@ -2,9 +2,11 @@
 
 // Protótipos das funções
 void milhar(int number);
+void milharSemE(int number);
 void centena(int number);
 void dezena(int number);
 void dezenaUm(int number);
+void dezenaSemE(int number);
 void unidade(int number);
 
 int main() {
@@ -26,14 +28,17 @@ int main() {
     }
 
     if (num_digitos == 4) {
-        if (digitos[2] == 0) {
+        if (digitos[2] != 0) {
             milharSemE(digitos[3]);
+            centena(digitos[2]);
         } else {
             milhar(digitos[3]);
+            centena(digitos[2]);
         }
-        centena(digitos[2]);
         if (digitos[1] == 1) {
             dezenaUm(numero % 100);
+        } else if (digitos[0] == 0) {
+            dezenaSemE(digitos[1]);
         } else {
             dezena(digitos[1]);
             unidade(digitos[0]);
@@ -42,6 +47,8 @@ int main() {
         centena(digitos[2]);
         if (digitos[1] == 1) {
             dezenaUm(numero % 100);
+        } else if (digitos[0] == 0) {
+            dezenaSemE(digitos[1]);
         } else {
             dezena(digitos[1]);
             unidade(digitos[0]);
@@ -49,6 +56,8 @@ int main() {
     } else if (num_digitos == 2) {
         if (digitos[1] == 1) {
             dezenaUm(numero);
+        } else if (digitos[0] == 0) {
+            dezenaSemE(digitos[1]);
         } else {
             dezena(digitos[1]);
             unidade(digitos[0]);
@@ -56,7 +65,11 @@ int main() {
     } else if (num_digitos == 1) {
         unidade(digitos[0]);
     } else {
-        printf("Número inválido");
+        if (numero == 0) {
+            unidade(numero);
+        } else {
+            printf("Número inválido");
+        }
     }
 
     return 0;
@@ -64,6 +77,8 @@ int main() {
 
 void milhar(int number) {
     switch (number) {
+        case 0:
+            break;
         case 1:
             printf("mil e ");
             break;
@@ -102,31 +117,31 @@ void milharSemE (int number) {
         case 0:            
             break;
         case 1:
-            printf("mil");
+            printf("mil ");
             break;
         case 2:
-            printf("dois mil");
+            printf("dois mil ");
             break;
         case 3:
-            printf("três mil");
+            printf("três mil ");
             break;
         case 4:
-            printf("quatro mil");
+            printf("quatro mil ");
             break;
         case 5:
-            printf("cinco mil");
+            printf("cinco mil ");
             break;
         case 6:
-            printf("seis mil");
+            printf("seis mil ");
             break;
         case 7:
-            printf("sete mil");
+            printf("sete mil ");
             break;
         case 8:
-            printf("oito mil");
+            printf("oito mil ");
             break;
         case 9:
-            printf("nove mil");
+            printf("nove mil ");
             break;
         default:
             printf("Número inválido");
@@ -201,6 +216,43 @@ void dezena(int number) {
             break;
         case 9:
             printf("noventa e ");
+            break;
+        default:
+            printf("Número inválido");
+            break;
+    }
+}
+
+void dezenaSemE(int number) {
+    switch (number) {
+        case 0:
+            break;
+        case 1:
+            printf("dez ");
+            break;
+        case 2:
+            printf("vinte ");
+            break;
+        case 3:
+            printf("trinta ");
+            break;
+        case 4:
+            printf("quarenta ");
+            break;
+        case 5:
+            printf("cinquenta ");
+            break;
+        case 6:
+            printf("sessenta ");
+            break;
+        case 7:
+            printf("setenta ");
+            break;
+        case 8:
+            printf("oitenta ");
+            break;
+        case 9:
+            printf("noventa ");
             break;
         default:
             printf("Número inválido");
