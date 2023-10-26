@@ -22,6 +22,6 @@ int main(){
         soma = soma + salario;
     }
     
-    printf ("\nA media do salario dos funcionarios e: %d", (soma/10));
+    printf ("\nA media do salario dos funcionários e: %d", (soma/10));
     printf  ("\nO maior salario e: %d", maior);
 }

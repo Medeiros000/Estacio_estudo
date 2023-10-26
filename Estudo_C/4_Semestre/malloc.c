@@ -1,10 +1,5 @@
+#include<stdio.h>
 #include<stdlib.h>
-
-// void * malloc(size_t size);
-
-// void free(void * ptr);
-
-// void * realloc(void * ptr, size_t newsize);
 
 int main() {
     int *p;
