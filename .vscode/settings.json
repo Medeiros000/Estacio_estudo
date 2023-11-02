@@ -36,6 +36,10 @@
   "C_Cpp_Runner.useAddressSanitizer": false,
   "code-runner.runInTerminal": true,
   "files.associations": {
-    "ponteiros": "c"
+    "ponteiros": "c",
+    "conio.h": "c",
+    "ctype.h": "c",
+    "string.h": "c",
+    "stdlib.h": "c"
   }
 }

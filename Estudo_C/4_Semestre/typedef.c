@@ -1,12 +1,18 @@
 #include<stdio.h>
 
-typedef int altura;
+typedef int medida;
 
-altura alt = 10;
+typedef medida altura;
+
+altura alt = 20;
+
+int x = 4, i;
 
 int main() {
 
-    printf("Altura = %d\n", alt);
+    i = alt / x;
+
+    printf("%d", i);
 
     return 0;
 }
