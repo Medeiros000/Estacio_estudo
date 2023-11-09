@@ -1,18 +1,17 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
     int cont, numero, maior;
 
-    printf ("Digite um numero: ");
-    scanf ("%d", &numero);
-    maior = numero;
-
-        for (cont=1;cont<=14;cont=cont+1) {
-            printf ("Digite um numero: ");
-            scanf ("%d", &numero);
-            if (numero > maior) {
-                maior = numero;
-            }
+    for (cont = 1; cont <= 15; cont = cont + 1)
+    {
+        printf("Digite o %d° numero : ", cont);
+        scanf("%d", &numero);
+        if (numero > maior)
+        {
+            maior = numero;
         }
-    printf ("O maior numero digitado foi %d", maior);
+    }
+    printf("O maior numero digitado foi %d", maior);
 }
