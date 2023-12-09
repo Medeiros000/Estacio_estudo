@@ -1,0 +1,8 @@
+Inicio do texto
+Verificando a quebra de linha
+Esta funcionando de acordo com o esperado
+Continua pulando linha a cada vez que escrevo
+A funcao strcat falhou
+Testando pontos e numeros 0123.
+Teste apos renomear.
+Esta tudo funcionando bem.
