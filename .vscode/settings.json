@@ -41,5 +41,6 @@
     "ctype.h": "c",
     "string.h": "c",
     "stdlib.h": "c"
-  }
+  },
+  "python.pythonPath": "C:/Users/medei/AppData/Local/Programs/Python/Python312/python.exe"
 }

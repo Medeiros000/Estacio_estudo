@@ -1,21 +1,21 @@
 
-# tuple = [1, 4, 5, 2, 7, 3, 9, 6, 8]
+# list = [1, 4, 5, 2, 7, 3, 9, 6, 8]
 
-tuple = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 
 
-def insertion_sort(tuple):
-  for i in range(1, len(tuple)):
-    key = tuple[i]
+def insertion_sort(list):
+  for i in range(1, len(list)):
+    key = list[i]
     j = i - 1
-    while j >= 0 and key < tuple[j]:
-      tuple[j + 1] = tuple[j]
+    while j >= 0 and key < list[j]:
+      list[j + 1] = list[j]
       j -= 1
-    tuple[j + 1] = key
+    list[j + 1] = key
 
-  return tuple
+  return list
 
 
-result = insertion_sort(tuple)
+result = insertion_sort(list)
 
 print(result)
